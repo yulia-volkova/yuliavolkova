@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default " auto" }}">
+
+<head>
+    {{- partial "head.html" . }}
+</head>
+
+<body class="
+{{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}
+{{- print " list" -}}
+{{- end -}}
+{{- if eq site.Params.defaultTheme `dark` -}}
+{{- print " dark" }}
+{{- end -}}
+" id="top">
+{{- partialCached "header.html" . .Page -}}
+{{ partial "timeline.html" . }}
+<main class="main">
+<article class="first-entry home-info">
+    <header class="entry-header">
+<h1><img src="/images/yulog.png" alt="Icon" style="width: 70px; height: 70px; vertical-align: middle;"> Yul'log</h1>
+    </header>
+    <section class="entry-content">
+        <p>Hi, this is Yulia. This is a short page about me. Besides, I’m a senior Data Scientist at Behavox.</p>
+        <img src="/images/my_photo.jpg" alt="Yulia's photo" class="profile-photo">
+        <div class="profile-info">
+                <p>Email: <a href="mailto:yuulia.volkova@gmail.com">yuulia.volkova@gmail.com</a></p>
+                <p>CV: <a href="https://drive.google.com/file/d/1fR0RstDcicCNREbDN-neyubo0kbyeUbF/view?usp=sharing" target="_blank">Available here</a></p>
+            </div>
+    </section>
+    <footer class="entry-footer">
+        <div class="social-icons">
+    <a href="" target="_blank" rel="noopener noreferrer me" title="Github">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+    </a>
+    <a href="" target="_blank" rel="noopener noreferrer me" title="Twitter">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+    </path>
+</svg>
+    </a>
+</div>
+
+    </footer>
+</article>
+
+<article class="education-entry home-info">
+        <header class="education-header">
+            <h1>🎓 Education</h1>
+        </header>
+        <section class="entry-content">
+            <h2>LSE's Department of Economics (2017-18)</h2>
+            <p>I was an MSc student at LSE's Department of Economics, where I focused on econometrics and mathematical
+                economics. Here, I took the following courses:</p>
+            <ul>
+                <li><a href="#course-link-1">Mathematics for Econometrics (1st class for EC400)</a></li>
+                <li><a href="#course-link-2">Mathematics for Macroeconomics</a></li>
+                <li><a href="#course-link-3">Mathematics for Microeconomics</a></li>
+                <li><a href="#course-link-4">Econometrics (upper 2nd class)</a></li>
+                <li><a href="#course-link-5">Macroeconomics (upper 2nd class)</a></li>
+                <li><a href="#course-link-6">Dissertation in Finance (1st class)</a></li>
+                <li><a href="#course-link-7">Corporate Finance (1st class)</a></li>
+            </ul>
+            <h2>BSc in Economics and Philosophy (2013-16)</h2>
+            <p>In the academic years 2013-16, I took a total of 29 semester-long modules. The ones I enjoyed the most
+                were:</p>
+            <ul>
+                <li><a href="#course-link-8">Econometrics I (1st class)</a></li>
+                <li><a href="#course-link-9">Econometrics II (1st class)</a></li>
+                <li><a href="#course-link-10">Probability and Statistics I</a></li>
+                <li><a href="#course-link-11">Probability and Statistics II</a></li>
+            </ul>
+        </section>
+        <footer class="entry-footer">
+            <!-- You can add any relevant footer content here, or links to certificates, etc. -->
+        </footer>
+    </article>
+
+<article class="timeline-entry home-info">
+    <header class="timeline-header">
+        <h1>📅 Timeline</h1>
+    </header>
+    <section class="timeline-content">
+    <section id="experience" class="home-section wg-experience">
+        <div class="home-section-bg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <!-- First Experience Block -->
+                    <div class="experience">
+                        <div class="timeline-badge first"></div>
+                        <div class="col py-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex align-content-start">
+                                        <div>
+                                            <div class="section-subheading card-title exp-title text-muted my-0">
+                                                Senior Data Scientist, Behavox
+                                            </div>
+                                            <div class="text-muted exp-meta">Jun 2020 – Present</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-text">Development and optimization of ML applications for Insider crime</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Experience Block -->
+                    <div class="experience">
+                        <div class="timeline-badge"></div>
+                        <div class="col py-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex align-content-start">
+                                        <div>
+                                            <div class="section-subheading card-title exp-title text-muted my-0">Senior
+                                                Data Scientist, Behavox
+                                            </div>
+                                            <div class="text-muted exp-meta">Feb 2017-Jun 2020</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-text">Development of multilingual applications and reports to flag statistical deviations and compliance breaches in client data.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Third Experience Block -->
+                    <div class="experience">
+                        <div class="timeline-badge last"></div>
+                        <div class="col py-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex align-content-start">
+                                        <div>
+                                            <div class="section-subheading card-title exp-title text-muted my-0">R&D
+                                                Internship CHEMP, HSE
+                                            </div>
+                                            <div class="text-muted exp-meta">Oct 2016 – Apr 2017</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-text">Statistical analysis of key demographic trends for Eastern Europe</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+        </article>
+    <!-- End of your timeline code -->
+
+    {{- block "main" . }}{{ end }}
+</main>
+{{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
+</body>
+
+</html>

@@ -1,4 +1,23 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
-theme = "hugo-papermod"
+title = "Yulia Volkova"
+theme = "PaperMod"
+logo = "/images/yulog.png"
+
+
+[menu]
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Publications"
+    url = "/publications/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 3
